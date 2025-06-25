@@ -1,0 +1,101 @@
+﻿{
+  "nodes": [
+    {
+      "id": "sakamoto",
+      "label": "坂本龍馬",
+      "type": "person"
+    },
+    {
+      "id": "satsucho",
+      "label": "薩長同盟",
+      "type": "event"
+    },
+    {
+      "id": "treaty",
+      "label": "日米和親条約",
+      "type": "event"
+    },
+    {
+      "id": "saigo",
+      "label": "西郷隆盛",
+      "type": "person"
+    },
+    {
+      "id": "okubo",
+      "label": "大久保利通",
+      "type": "person"
+    },
+    {
+      "id": "iwakura",
+      "label": "岩倉具視",
+      "type": "person"
+    },
+    {
+      "id": "yoshinobu",
+      "label": "徳川慶喜",
+      "type": "person"
+    },
+    {
+      "id": "kaishu",
+      "label": "勝海舟",
+      "type": "person"
+    },
+    {
+      "id": "restoration",
+      "label": "王政復古の大号令",
+      "type": "event"
+    },
+    {
+      "id": "oath",
+      "label": "五箇条の御誓文",
+      "type": "event"
+    },
+    {
+      "id": "abolition",
+      "label": "廃藩置県",
+      "type": "event"
+    },
+    {
+      "id": "civilwar",
+      "label": "戊辰戦争",
+      "type": "event"
+    }
+  ],
+  "edges": [
+    {
+      "source": "sakamoto",
+      "target": "satsucho",
+      "relation": "仲介"
+    },
+    {
+      "source": "sakamoto",
+      "target": "treaty",
+      "relation": "提言"
+    },
+    {
+      "source": "saigo",
+      "target": "restoration",
+      "relation": "推進"
+    },
+    {
+      "source": "okubo",
+      "target": "oath",
+      "relation": "関与"
+    },
+    {
+      "source": "iwakura",
+      "target": "abolition",
+      "relation": "実施"
+    },
+    {
+      "source": "yoshinobu",
+      "target": "civilwar",
+      "relation": "敗北"
+    },
+    {
+      "source": "kaishu",
+      "target": "yoshinobu",
+      "relation": "説得"
+    }
+  ]
+}

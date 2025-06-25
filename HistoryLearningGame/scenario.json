@@ -1,0 +1,110 @@
+﻿{
+  "nodes": [
+    {
+      "id": "start",
+      "description": "あなたは幕末の日本に転送されました。最初に誰に会いに行きますか？",
+      "choices": [
+        {
+          "text": "坂本龍馬に会いに行く",
+          "nextNodeId": "node2",
+          "semanticNodeId": "sakamoto"
+        },
+        {
+          "text": "徳川慶喜に謁見する",
+          "nextNodeId": "node3",
+          "semanticNodeId": "yoshinobu"
+        }
+      ]
+    },
+    {
+      "id": "node2",
+      "description": "坂本龍馬は薩長同盟の仲介を考えています。あなたはどうする？",
+      "choices": [
+        {
+          "text": "同盟のために西郷隆盛を紹介する",
+          "nextNodeId": "node4",
+          "semanticNodeId": "saigo"
+        },
+        {
+          "text": "アメリカとの条約交渉を優先する",
+          "nextNodeId": "gameover",
+          "semanticNodeId": "treaty"
+        }
+      ]
+    },
+    {
+      "id": "node3",
+      "description": "慶喜は強気の態度です。あなたはどう対応しますか？",
+      "choices": [
+        {
+          "text": "勝海舟に交渉を任せる",
+          "nextNodeId": "end",
+          "semanticNodeId": "kaishu"
+        },
+        {
+          "text": "武力で倒幕する",
+          "nextNodeId": "gameover",
+          "semanticNodeId": "civilwar"
+        }
+      ]
+    },
+    {
+      "id": "node4",
+      "description": "薩長同盟は成功しました。次にどう動きますか？",
+      "choices": [
+        {
+          "text": "王政復古の大号令を出す",
+          "nextNodeId": "node5",
+          "semanticNodeId": "restoration"
+        },
+        {
+          "text": "外国と開戦する",
+          "nextNodeId": "gameover",
+          "semanticNodeId": "civilwar"
+        }
+      ]
+    },
+    {
+      "id": "node5",
+      "description": "あなたは新政府の中核にいます。どの改革を実行しますか？",
+      "choices": [
+        {
+          "text": "五箇条の御誓文を定める",
+          "nextNodeId": "node6",
+          "semanticNodeId": "oath"
+        },
+        {
+          "text": "藩制度を残す",
+          "nextNodeId": "gameover",
+          "semanticNodeId": "yoshinobu"
+        }
+      ]
+    },
+    {
+      "id": "node6",
+      "description": "最後の改革です。どれを選びますか？",
+      "choices": [
+        {
+          "text": "廃藩置県を断行する",
+          "nextNodeId": "end",
+          "semanticNodeId": "abolition"
+        },
+        {
+          "text": "旧藩主に任せる",
+          "nextNodeId": "gameover",
+          "semanticNodeId": "yoshinobu"
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "description": "あなたは無事に明治維新を完遂しました！おめでとう！",
+      "choices": []
+    },
+    {
+      "id": "gameover",
+      "description": "あなたの選択により歴史が大きく変わってしまいました……ゲームオーバー。",
+      "choices": []
+    }
+  ]
+}
